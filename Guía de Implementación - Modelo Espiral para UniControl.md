@@ -304,7 +304,7 @@ Risk Review: 30 min - Semanal
 ---
 
 **Documento Version**: 1.0  
-**Last Updated**: 2025-04-21  
-**Next Review**: 2025-04-28  
+**Last Updated**: 2026-04-21  
+**Next Review**: 2026-04-28  
 **Spiral Manager**: [Nombre]  
 **Risk Owner**: [Nombre]
