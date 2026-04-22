@@ -1,73 +1,211 @@
-# Welcome to your Lovable project
+# Documentación del Proyecto UniControl
 
-## Project info
+## Estructura de Documentación
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Esta carpeta contiene toda la documentación necesaria para el desarrollo del proyecto UniControl utilizando el modelo espiral y Jira como herramienta de gestión.
 
-## How can I edit this code?
+## Documentos Principales
 
-There are several ways of editing your application.
+### 1. [PROJECT_DOCUMENTATION.md](./PROJECT_DOCUMENTATION.md)
+Descripción completa del proyecto incluyendo:
+- Visión general y objetivos
+- Arquitectura técnica
+- Modelo de desarrollo espiral
+- Plan de calidad y gestión de riesgos
+- Timeline y presupuesto
+- Métricas de éxito
 
-**Use Lovable**
+### 2. [JIRA_EPICS_STORIES.md](./JIRA_EPICS_STORIES.md)
+Configuración detallada para Jira:
+- Épicos principales del proyecto
+- User stories completas con criterios de aceptación
+- Estructura de issues y dependencias
+- Estimación de story points
+- Priorización por espiral
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### 3. [SPIRAL_IMPLEMENTATION_GUIDE.md](./SPIRAL_IMPLEMENTATION_GUIDE.md)
+Guía de implementación del modelo espiral:
+- Estructura de las 4 espirales
+- Gestión de riesgos por fase
+- Métricas y KPIs
+- Plan de comunicación
+- Herramientas y automatización
 
-Changes made via Lovable will be committed automatically to this repo.
+### 4. [TECHNICAL_TEMPLATES.md](./TECHNICAL_TEMPLATES.md)
+Plantillas de documentación técnica:
+- API documentation
+- Especificaciones técnicas
+- Base de datos
+- Test cases
+- Code review
+- Deployment plans
+- Incident reports
 
-**Use your preferred IDE**
+## Flujo de Trabajo Recomendado
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Fase Inicial (Setup)
+1. Leer **PROJECT_DOCUMENTATION.md** para entender el alcance
+2. Configurar proyecto en Jira usando **JIRA_EPICS_STORIES.md**
+3. Revisar **SPIRAL_IMPLEMENTATION_GUIDE.md** para entender el proceso
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Desarrollo (Por Espiral)
+1. Planificar espiral actual usando la guía correspondiente
+2. Crear issues en Jira basados en las user stories
+3. Usar plantillas técnicas para documentación
+4. Seguir proceso de code review y testing
 
-Follow these steps:
+### Mantenimiento
+1. Actualizar documentación regularmente
+2. Usar templates para nuevos componentes
+3. Mantener registro de lecciones aprendidas
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Configuración de Jira
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Project Setup
+```
+Project Key: UNIC
+Project Name: UniControl Development
+Project Type: Software
 ```
 
-**Edit a file directly in GitHub**
+### Boards Principales
+- **Product Backlog**: Gestión de requisitos
+- **Sprint Board**: Tareas del sprint actual
+- **Kanban Board**: Flujo continuo
+- **Bug Tracking**: Incidencias
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Components
+- AUTH - Autenticación y Autorización
+- USER - Gestión de Usuarios
+- ATTEND - Control de Asistencia
+- PROJECT - Gestión de Proyectos
+- ANALYTICS - Analítica y Reportes
+- NOTIFY - Sistema de Notificaciones
+- MOBILE - Aplicación Móvil
+- ADMIN - Panel Administrativo
 
-**Use GitHub Codespaces**
+## Estructura de Carpetas Adicional
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Para mantener la organización, se recomienda crear las siguientes carpetas:
 
-## What technologies are used for this project?
+```
+docs/
+|-- README.md                     # Este archivo
+|-- PROJECT_DOCUMENTATION.md      # Documentación principal
+|-- JIRA_EPICS_STORIES.md         # Épicos y stories para Jira
+|-- SPIRAL_IMPLEMENTATION_GUIDE.md # Guía del modelo espiral
+|-- TECHNICAL_TEMPLATES.md        # Plantillas técnicas
+|-- api/                          # Documentación de APIs
+|   |-- authentication.md
+|   |-- attendance.md
+|   |-- projects.md
+|   |-- analytics.md
+|-- database/                     # Esquemas y migraciones
+|   |-- schema.sql
+|   |-- migrations/
+|   |-- seeds/
+|-- testing/                      # Documentación de tests
+|   |-- unit/
+|   |-- integration/
+|   |-- e2e/
+|-- deployment/                   # Guías de deployment
+|   |-- staging.md
+|   |-- production.md
+|   |-- rollback.md
+|-- meetings/                     # Minutas y seguimiento
+|   |-- sprint-planning/
+|   |-- reviews/
+|   |-- retrospectives/
+```
 
-This project is built with:
+## Contactos y Responsabilidades
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Equipo de Proyecto
+- **Project Manager**: [Nombre] - Gestión general y comunicación
+- **Tech Lead**: [Nombre] - Arquitectura y decisiones técnicas
+- **Product Owner**: [Nombre] - Priorización y requisitos
+- **QA Lead**: [Nombre] - Calidad y testing
+- **DevOps Lead**: [Nombre] - Infraestructura y deployment
 
-## How can I deploy this project?
+### Stakeholders
+- **Administradores Universitarios**: Usuarios finales del sistema
+- **Coordinadores de Carrera**: Supervisores académicos
+- **Docentes**: Usuarios principales de asistencia y proyectos
+- **Estudiantes**: Usuarios finales de consulta y participación
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Proceso de Actualización
 
-## Can I connect a custom domain to my Lovable project?
+### Versionamiento
+- **Major**: Cambios estructurales o nuevos módulos
+- **Minor**: Nuevas funcionalidades o mejoras significativas
+- **Patch**: Correcciones y actualizaciones menores
 
-Yes, you can!
+### Review Schedule
+- **Semanal**: Revisión de progreso y ajustes menores
+- **Mensual**: Revisión completa y actualización mayor
+- **Por espiral**: Evaluación y lecciones aprendidas
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Herramientas Recomendadas
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Documentación
+- **Confluence**: Documentación colaborativa
+- **Markdown**: Formato estándar para archivos
+- **Diagrams.net**: Diagramas técnicos
+- **Swagger**: Documentación de APIs
+
+### Comunicación
+- **Slack**: Comunicación diaria
+- **Jira**: Gestión de tareas
+- **Email**: Comunicación oficial
+- **Teams**: Reuniones y presentaciones
+
+### Desarrollo
+- **GitHub**: Control de versiones
+- **VS Code**: Desarrollo
+- **Postman**: Testing de APIs
+- **Docker**: Contenerización
+
+## Métricas de Seguimiento
+
+### Progreso del Proyecto
+- **Velocity**: Story points por sprint
+- **Burndown**: Progreso vs tiempo
+- **Cycle Time**: Tiempo de desarrollo
+- **Lead Time**: Tiempo total de entrega
+
+### Calidad
+- **Bug Rate**: Número de bugs por sprint
+- **Test Coverage**: Porcentaje de código cubierto
+- **Code Review**: Tiempo y calidad de revisiones
+- **Deployment Success**: Tasa de deployments exitosos
+
+### Negocio
+- **User Adoption**: Porcentaje de adopción
+- **Satisfaction**: NPS y CSAT
+- **Performance**: Tiempos de respuesta
+- **Availability**: Uptime del sistema
+
+## Próximos Pasos
+
+1. **Setup Inicial** (Semana 1)
+   - Configurar Jira project
+   - Crear repositorios
+   - Setup herramientas de comunicación
+
+2. **Sprint 0** (Semana 2)
+   - Planning detallado
+   - Setup de infraestructura
+   - Onboarding del equipo
+
+3. **Espiral 1** (Semanas 3-6)
+   - Desarrollo del MVP
+   - Testing continuo
+   - Feedback con usuarios
+
+---
+
+Para más información, contactar al Project Manager o Tech Lead del proyecto.
+
+**Última Actualización**: 2025-04-21  
+**Versión**: 1.0  
+**Próxima Revisión**: 2025-04-28
